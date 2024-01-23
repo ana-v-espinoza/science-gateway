@@ -17,14 +17,13 @@ RUN apt-get update && \
 
 USER $NB_UID
 
-ADD environment.yml environment-tf.yml /tmp
+ADD environment.yml /tmp
 
 RUN mamba install --quiet --yes \
       'conda-forge::nb_conda_kernels' \
       'conda-forge::jupyterlab-git' \
       'conda-forge::ipywidgets' && \
-    mamba env update --name base -f /tmp/environment.yml && \
-    mamba env update --name $DEFAULT_ENV_NAME -f /tmp/environment-tf.yml && \
+    mamba env update --name $DEFAULT_ENV_NAME -f /tmp/environment.yml && \
     pip install --no-cache-dir nbgitpuller && \
     mamba clean --all -f -y && \
     jupyter lab clean -y && \

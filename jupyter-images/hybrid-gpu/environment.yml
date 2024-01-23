@@ -1,4 +1,4 @@
-name: unidata-standard
+name: unidata-standard-tf
 channels:
  - conda-forge
 dependencies:
@@ -22,3 +22,4 @@ dependencies:
     # It is recommended to install a package using pip as a last resort, i.e.
     # when it is not found in the conda repos
     - palmerpenguins
+    - tensorflow[and-cuda]

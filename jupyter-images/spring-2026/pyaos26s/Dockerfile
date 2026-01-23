@@ -4,7 +4,7 @@
 ARG BASE_CONTAINER=quay.io/jupyter/minimal-notebook
 FROM $BASE_CONTAINER
 
-ENV DEFAULT_ENV_NAME=pyaos26s EDITOR=nano VISUAL=nano
+ENV DEFAULT_ENV_NAME=2026-ams-studentconference EDITOR=nano VISUAL=nano
 
 LABEL maintainer="Unidata <support-gateway@unidata.ucar.edu>"
 

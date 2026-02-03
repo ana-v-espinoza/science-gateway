@@ -19,6 +19,17 @@ dependencies:
   - python-awips
   - scikit-learn
   - seaborn
+  - netcdf4
+  - scipy
+  - geopandas
+  - arm_pyart
+  - netcdf4
+  - scipy
+  - geopandas
+  - arm_pyart
+  - cfgrib
+  - statsmodels
+  - plotly
   - pip:
     # It is recommended to install a package using pip as a last resort, i.e.
     # when it is not found in the conda repos
